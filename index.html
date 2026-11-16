@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>담벼락</title>
+<meta name="description" content="그 자리에 가야 열리는 기록, 담벼락">
+<style>
+  :root { color-scheme: light dark; --bg:#F7F5F2; --ink:#1C1917; --sub:#57504A; --line:#E3DDD6; --accent:#B04E2C; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121110; --ink:#F2EEEA; --sub:#B3AAA2; --line:#35302C; --accent:#E2805C; } }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; padding:72px 16px 96px; background:var(--bg); color:var(--ink);
+         font:16px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; word-break:keep-all; overflow-wrap:anywhere; }
+  main { max-width:640px; margin:0 auto; }
+  .bricks { display:grid; grid-template-columns:repeat(4, 22px); gap:4px; margin-bottom:22px; }
+  .bricks i { height:10px; border-radius:2px; background:var(--accent); }
+  .bricks i:nth-child(4n+2) { opacity:.75; } .bricks i:nth-child(4n+3) { opacity:.55; }
+  h1 { font-size:36px; margin:0; letter-spacing:-0.03em; }
+  .lead { color:var(--sub); font-size:18px; margin:4px 0 28px; }
+  p { color:var(--sub); }
+  ul { list-style:none; padding:0; margin:28px 0 0; border-top:1px solid var(--line); }
+  li { border-bottom:1px solid var(--line); }
+  li a { display:flex; justify-content:space-between; padding:14px 2px; color:var(--ink); text-decoration:none; font-weight:600; }
+  li a::after { content:"›"; color:var(--sub); }
+  a { color:var(--accent); }
+  .muted { color:var(--sub); font-size:14px; margin-top:32px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bricks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <h1>담벼락</h1>
+  <p class="lead">그 자리에 가야 열리는 기록</p>
+  <p>간 곳에서 찍은 사진과 글을 그 장소에 남겨요. 남의 기록은 그 자리에 가서 2분 머물러야 열려요.</p>
+  <ul>
+    <li><a href="terms.html">이용약관</a></li>
+    <li><a href="privacy.html">개인정보 처리방침</a></li>
+    <li><a href="location.html">위치기반서비스 이용약관</a></li>
+    <li><a href="support.html">도움말 · 문의</a></li>
+  </ul>
+  <p class="muted">운영 Jay Studio · <a href="mailto:support@jaystudio.app">support@jaystudio.app</a></p>
+</main>
+</body>
+</html>
